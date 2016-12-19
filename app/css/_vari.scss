@@ -8,6 +8,16 @@ $gray: #F2F2F2;
 $purple: #5C415D;
 $gold: #C89933;
 
+@font-face {font-family: 'Nexa';font-weight: bold;font-style: italic;src: url('/fonts/32B1E6_0_0.eot');src: url('/fonts/32B1E6_0_0.eot?#iefix') format('embedded-opentype'),url('/fonts/32B1E6_0_0.woff2') format('woff2'),url('/fonts/32B1E6_0_0.woff') format('woff'),url('/fonts/32B1E6_0_0.ttf') format('truetype');}
+@font-face {font-family: 'NexaBlack';src: url('/fonts/32B1E6_1_0.eot');src: url('/fonts/32B1E6_1_0.eot?#iefix') format('embedded-opentype'),url('/fonts/32B1E6_1_0.woff2') format('woff2'),url('/fonts/32B1E6_1_0.woff') format('woff'),url('/fonts/32B1E6_1_0.ttf') format('truetype');}
+@font-face {font-family: 'Nexa';font-weight: normal;font-style: italic;src: url('/fonts/32B1E6_2_0.eot');src: url('/fonts/32B1E6_2_0.eot?#iefix') format('embedded-opentype'),url('/fonts/32B1E6_2_0.woff2') format('woff2'),url('/fonts/32B1E6_2_0.woff') format('woff'),url('/fonts/32B1E6_2_0.ttf') format('truetype');}
+@font-face {font-family: 'Nexa';font-weight: normal;font-style: normal;src: url('/fonts/32B1E6_3_0.eot');src: url('/fonts/32B1E6_3_0.eot?#iefix') format('embedded-opentype'),url('/fonts/32B1E6_3_0.woff2') format('woff2'),url('/fonts/32B1E6_3_0.woff') format('woff'),url('/fonts/32B1E6_3_0.ttf') format('truetype');}
+
+.Nexa-bold-italic { font-family: Nexa; font-weight: bold; font-style:italic; }
+.NexaBlack { font-family: NexaBlack; }
+.Nexa-normal-italic { font-family: Nexa; font-weight: normal; font-style:italic; }
+.Nexa-normal-normal { font-family: Nexa; font-weight: normal; font-style:normal; }
+
 @mixin flex-box
 {
   display:-webkit-box; // old

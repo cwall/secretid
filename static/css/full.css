@@ -1,20 +1,86 @@
+@font-face {
+  font-family: 'Nexa';
+  font-weight: bold;
+  font-style: italic;
+  src: url("/fonts/32B1E6_0_0.eot");
+  src: url("/fonts/32B1E6_0_0.eot?#iefix") format("embedded-opentype"), url("/fonts/32B1E6_0_0.woff2") format("woff2"), url("/fonts/32B1E6_0_0.woff") format("woff"), url("/fonts/32B1E6_0_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'NexaBlack';
+  src: url("/fonts/32B1E6_1_0.eot");
+  src: url("/fonts/32B1E6_1_0.eot?#iefix") format("embedded-opentype"), url("/fonts/32B1E6_1_0.woff2") format("woff2"), url("/fonts/32B1E6_1_0.woff") format("woff"), url("/fonts/32B1E6_1_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Nexa';
+  font-weight: normal;
+  font-style: italic;
+  src: url("/fonts/32B1E6_2_0.eot");
+  src: url("/fonts/32B1E6_2_0.eot?#iefix") format("embedded-opentype"), url("/fonts/32B1E6_2_0.woff2") format("woff2"), url("/fonts/32B1E6_2_0.woff") format("woff"), url("/fonts/32B1E6_2_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Nexa';
+  font-weight: normal;
+  font-style: normal;
+  src: url("/fonts/32B1E6_3_0.eot");
+  src: url("/fonts/32B1E6_3_0.eot?#iefix") format("embedded-opentype"), url("/fonts/32B1E6_3_0.woff2") format("woff2"), url("/fonts/32B1E6_3_0.woff") format("woff"), url("/fonts/32B1E6_3_0.ttf") format("truetype"); }
+
+.Nexa-bold-italic {
+  font-family: Nexa;
+  font-weight: bold;
+  font-style: italic; }
+
+.NexaBlack, #totem a {
+  font-family: NexaBlack; }
+
+.Nexa-normal-italic {
+  font-family: Nexa;
+  font-weight: normal;
+  font-style: italic; }
+
+.Nexa-normal-normal {
+  font-family: Nexa;
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   background-color: #fff;
   padding: 0;
   margin: 0;
-  font-family: 'Helvetica', san-serif;
+  font-family: Nexa, 'Helvetica', san-serif;
   font-size: 16px; }
+
+.logo {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background: url(../img/logo.svg) no-repeat center center;
+  background-size: contain;
+  vertical-align: middle; }
+  .logo .cls-1 {
+    fill: #342e3d; }
+  .logo .cls-2 {
+    fill: #f24236; }
+
+.cls-1 {
+  fill: #e6e6e6; }
+
+.cls-2 {
+  fill: #f24236; }
 
 #totem {
   width: 100%;
-  height: 70px;
+  height: 50px;
+  padding: 10px;
   background-color: #2B2733; }
+  #totem nav {
+    display: inline-block;
+    vertical-align: middle; }
   #totem a {
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: .8em; }
+    font-size: 1em; }
 
 
 /*# sourceMappingURL=full.css.map*/
