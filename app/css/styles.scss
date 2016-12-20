@@ -1,55 +1,125 @@
 @import 'vari';
 
 body {
-  background-color: $white;
+  background-color: #fdfdfd;
   padding: 0;
   margin: 0;
   font-family: Nexa, 'Helvetica', san-serif;
   font-size: 16px;
 }
-.logo {
-	width: 50px;
-	height: 50px;
-	display: inline-block;
-	background: url(../img/logo.svg) no-repeat center center;
-	background-size: contain;
-	vertical-align: middle;
 
-	.cls-1 {
-		fill:#342e3d;
+#logo-si-mark {
+	cursor: pointer;
+	.shine {
+		fill: #f2f2f2;
+		@include transition(all,.5s,ease-in);
 	}
 
-	.cls-2 {
-		fill: #f24236;
+	.mark {
+		fill: #202021;
+		@include transition(all,.5s,ease-in);
+	}
+
+	&:hover {
+		.shine {
+			fill: #d6d6d6;
+		}
+
+		.mark {
+			fill: #000;
+		}
 	}
 }
 
+a {
+	color: $gold;
 
-	.cls-1 {
-		fill: #e6e6e6;
+	&:hover {
+		color: $black;
 	}
+} 
 
-	.cls-2 {
-		fill: #f24236;
+.logo {
+	// width: 100px;
+	// height: 100px;
+	display: inline-block;
+	vertical-align: middle;
+
+	svg {
+		width: 90px;
+		height: auto;
+		display: inline-block;
 	}
+}
 
 #totem {
 	width: 100%;
-	height: 50px;
-	padding: 10px;
-	background-color: $black;
+	padding: 1.2em;
+	border-bottom: 1px solid $gold;
 
 	nav {
-		display: inline-block;
+		display: block;
 		vertical-align: middle;
+	}	
+}
+
+.navigation {
+	list-style: none;
+	padding:0;
+	margin: 0;
+	@include flex-box();
+	flex-flow:row wrap;
+	max-width: 800px;
+	min-width: 300px;
+	//border-bottom: 1px solid #e6e6e6;
+	align-items: center;
+	margin: 0 auto;
+	text-align: center;
+
+	li {
+		@include flex(1);
 	}
 
 	a {
-		color: $white;
-		margin: 0 10px;
 		text-decoration: none;
-		text-transform: uppercase;
-		font-size: 1em;
-		@extend .NexaBlack;
+		color: $black;
+		padding: 5px 10px;
+		background-color: transparent;
+		@include transition(all,.2s,ease-in);
+
+		&:hover {
+			text-decoration: none;
+			background-color: $blue;
+		}
 	}
+}
+
+@media screen and (max-width: 500px) and (min-width: 300px) {
+	#totem {
+		padding: 10px;
+		margin-bottom: 1em;
+		font-size: .725em;
+		font-weight: bold;
+		border-bottom: 1px solid #e6e6e6;
+	}
+
+	.logo {
+		svg {
+			width: 100%;
+		}
+	}
+	.navigation {
+		li {
+			order: 2;
+		}
+		.logo {
+			order: 1;
+		}
+	}
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }

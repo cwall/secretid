@@ -29,7 +29,7 @@
   font-weight: bold;
   font-style: italic; }
 
-.NexaBlack, #totem a {
+.NexaBlack {
   font-family: NexaBlack; }
 
 .Nexa-normal-italic {
@@ -43,44 +43,107 @@
   font-style: normal; }
 
 body {
-  background-color: #fff;
+  background-color: #fdfdfd;
   padding: 0;
   margin: 0;
   font-family: Nexa, 'Helvetica', san-serif;
   font-size: 16px; }
 
+#logo-si-mark {
+  cursor: pointer; }
+  #logo-si-mark .shine {
+    fill: #f2f2f2;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in; }
+  #logo-si-mark .mark {
+    fill: #202021;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in; }
+  #logo-si-mark:hover .shine {
+    fill: #d6d6d6; }
+  #logo-si-mark:hover .mark {
+    fill: #000; }
+
+a {
+  color: #C89933; }
+  a:hover {
+    color: #2B2733; }
+
 .logo {
-  width: 50px;
-  height: 50px;
   display: inline-block;
-  background: url(../img/logo.svg) no-repeat center center;
-  background-size: contain;
   vertical-align: middle; }
-  .logo .cls-1 {
-    fill: #342e3d; }
-  .logo .cls-2 {
-    fill: #f24236; }
-
-.cls-1 {
-  fill: #e6e6e6; }
-
-.cls-2 {
-  fill: #f24236; }
+  .logo svg {
+    width: 90px;
+    height: auto;
+    display: inline-block; }
 
 #totem {
   width: 100%;
-  height: 50px;
-  padding: 10px;
-  background-color: #2B2733; }
+  padding: 1.2em;
+  border-bottom: 1px solid #C89933; }
   #totem nav {
-    display: inline-block;
+    display: block;
     vertical-align: middle; }
-  #totem a {
-    color: #fff;
-    margin: 0 10px;
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 800px;
+  min-width: 300px;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center; }
+  .navigation li {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    flex: 1; }
+  .navigation a {
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1em; }
+    color: #2B2733;
+    padding: 5px 10px;
+    background-color: transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in; }
+    .navigation a:hover {
+      text-decoration: none;
+      background-color: #92DCE5; }
+
+@media screen and (max-width: 500px) and (min-width: 300px) {
+  #totem {
+    padding: 10px;
+    margin-bottom: 1em;
+    font-size: .725em;
+    font-weight: bold;
+    border-bottom: 1px solid #e6e6e6; }
+  .logo svg {
+    width: 100%; }
+  .navigation li {
+    order: 2; }
+  .navigation .logo {
+    order: 1; } }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 
 /*# sourceMappingURL=full.css.map*/
